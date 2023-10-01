@@ -1,1 +1,5 @@
 # Image-to-Pencil-Sketch-App
+The code is a Python script that takes an input image (specified by the variable "img_path"), converts it to grayscale, and then generates a sketch-like effect from the grayscale version of the image. 
+It starts by defining a function, "rgb2gray," which converts an RGB image to grayscale using a specific formula for luminance. Another function, "create_sketch," is defined to create the sketch effect. It does this by inverting the grayscale image, applying Gaussian blur to the inverted image, and then combining it with the original grayscale image using the "dodge" function.
+The "dodge" function blends the two images in a way that simulates the sketch effect. The script then loads the input image, converts it to grayscale, and generates the sketch using the defined functions. Finally, it displays the sketch using "cv2_imshow" and saves it as "sketch.png" using the "imageio.imsave" function.
+In essence, this code takes an input image and transforms it into a sketch-like representation, providing a visual effect that resembles a hand-drawn sketch.
